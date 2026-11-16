@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ViceCityCompass — a simple GTA 6 fan hub for maps, vehicles, missions, guides and database entries." />
+  <title>ViceCityCompass — GTA 6 Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="disclaimer" id="disclaimer" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+    <div class="disclaimer-card">
+      <button class="close-button" id="close-disclaimer" aria-label="Close disclaimer">×</button>
+      <p class="eyebrow">Before you enter Vice City</p>
+      <h2 id="disclaimer-title">Disclaimer</h2>
+      <p>GTA 6 has not been released yet. The information on ViceCityCompass is currently based on official announcements, research, publicly available sources, and unverified leaks. Some details may be incomplete, inaccurate, or subject to change.</p>
+      <p>We will significantly expand, update, and verify our content during the first week following GTA 6's official release to provide the most accurate and comprehensive information possible.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ViceCityCompass home">
+      <span class="brand-mark">VC</span>
+      <span>VICECITYCOMPASS</span>
+    </a>
+    <span class="header-note">THE UNOFFICIAL GTA 6 COMPASS</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to the next chapter</p>
+        <div class="gta-logo" aria-label="Grand Theft Auto VI logo">
+          <span class="gta-small">grand</span>
+          <span class="gta-large">theft auto</span>
+          <span class="gta-vi">VI</span>
+        </div>
+        <p class="hero-text">Your simple compass for everything we know about Vice City.</p>
+      </div>
+      <div class="countdown-panel">
+        <p class="eyebrow">Release countdown</p>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-date">Until November 19 at 00:00</p>
+      </div>
+    </section>
+
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <p class="eyebrow">Explore the hub</p>
+        <h1 id="directory-title">Everything in one place.</h1>
+      </div>
+      <div class="directory-grid">
+        <a class="directory-card card-map" href="interactive-map.html"><span class="card-number">01</span><span class="card-title">Interactive Map</span><span class="card-arrow">↗</span></a>
+        <a class="directory-card card-vehicles" href="vehicles.html"><span class="card-number">02</span><span class="card-title">Vehicles</span><span class="card-arrow">↗</span></a>
+        <a class="directory-card card-missions" href="missions.html"><span class="card-number">03</span><span class="card-title">Missions</span><span class="card-arrow">↗</span></a>
+        <a class="directory-card card-guides" href="guides.html"><span class="card-number">04</span><span class="card-title">Guides</span><span class="card-arrow">↗</span></a>
+        <a class="directory-card card-database" href="database.html"><span class="card-number">05</span><span class="card-title">Database</span><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>VICECITYCOMPASS</span><span>Built for the wait.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

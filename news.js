@@ -23,7 +23,7 @@ function renderNews(articles) {
     </article>`).join('');
 }
 
-fetch('data/news.json?v=2', { cache: 'no-store' })
+fetch('data/news.json?v=3', { cache: 'no-store' })
   .then((response) => { if (!response.ok) throw new Error('News data unavailable'); return response.json(); })
   .then(renderNews)
   .catch(() => { newsGrid.innerHTML = '<p class="news-empty">News articles are temporarily unavailable.</p>'; });

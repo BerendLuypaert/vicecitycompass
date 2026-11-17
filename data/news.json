@@ -5,8 +5,8 @@
     "category": "OFFICIAL",
     "description": "Grand Theft Auto VI pre-loading is officially available ahead of its November 19 launch. Discover how to prepare your console and what Rockstar has revealed about the upcoming release.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-    "thumbnail": "news-thumbnails/preload.svg",
-    "fallback": "news-thumbnails/preload-fallback.svg",
+    "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/89834o94713o21/94f09130d07de4a50e3ab971e2b7d8c253b7c706.jpg",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/89834o94713o21/b87f7632d4438319162b3655fe2e2a7d14de2205.jpg",
     "theme": "preload"
   },
   {
@@ -15,8 +15,8 @@
     "category": "OFFICIAL",
     "description": "Rockstar Games has released a brand-new gallery showcasing Vice City and the surrounding state of Leonida. Explore the latest environments, characters, and visual details.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
-    "thumbnail": "news-thumbnails/screenshots.svg",
-    "fallback": "news-thumbnails/screenshots-fallback.svg",
+    "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak81277255o9/72074994d6364ad0de8872aa971fc47653f644ab.jpg",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak81277255o9/71ee27202e87c888ad1b5e25b3e131e0da68dd36.jpg",
     "theme": "screenshots"
   },
   {
@@ -25,8 +25,8 @@
     "category": "OFFICIAL",
     "description": "Rockstar has revealed new details about GTA 6's console performance, including its 30 FPS target and additional graphical improvements available on PlayStation 5 Pro.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-    "thumbnail": "news-thumbnails/performance.svg",
-    "fallback": "news-thumbnails/performance-fallback.svg",
+    "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak8a12395591/71ea1e8f6691270bc9614eb33a34e4365697128a.jpg",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o39o87a435a25a/d930390d05e9c6fd4e06a20717299d54de57312a.jpg",
     "theme": "performance"
   },
   {
@@ -35,8 +35,8 @@
     "category": "MULTIPLAYER",
     "description": "Will GTA 6 feature an online multiplayer experience? Explore what has been officially confirmed, what remains unknown, and the latest discussion surrounding the future of GTA Online.",
     "sourceUrl": "https://www.gta6everything.com/questions/does-gta-6-have-online-multiplayer",
-    "thumbnail": "news-thumbnails/multiplayer.svg",
-    "fallback": "news-thumbnails/multiplayer-fallback.svg",
+    "thumbnail": "https://www.gta6everything.com/images/official/gta-6-real-dimez-car-dance.jpg",
+    "fallback": "https://www.gta6everything.com/brand/generated/logo.webp?v=1ae183dc",
     "theme": "multiplayer",
     "note": "Online features and release details are not officially confirmed."
   },
@@ -46,8 +46,8 @@
     "category": "TRAILER",
     "description": "Rockstar's Grand Theft Auto VI launch trailer offers another look at Jason, Lucia, and the world of Leonida. Explore the characters, atmosphere, and new footage revealed.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer",
-    "thumbnail": "news-thumbnails/trailer.svg",
-    "fallback": "news-thumbnails/trailer-fallback.svg",
+    "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/517572321a549a/0637b4bb19438399bc5b3e7bbdfe6936f79cdbf3.jpg",
+    "fallback": "https://i.ytimg.com/vi/rz1B4B2yBZY/sddefault.jpg",
     "theme": "trailer"
   },
   {
@@ -55,8 +55,8 @@
     "category": "GUIDE",
     "description": "Discover the differences between Grand Theft Auto VI editions, available platforms, Ultimate Edition benefits, and the exclusive Vintage Vice City pre-order bonuses.",
     "sourceUrl": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-    "thumbnail": "news-thumbnails/editions.svg",
-    "fallback": "news-thumbnails/editions-fallback.svg",
+    "thumbnail": "https://www.gtavispot.com/images/Cluster_1/GTA_vi_Price.webp",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/k4ak9okk485712/10d7450a2224db29736af8c50dd8207812e95e42.jpg",
     "theme": "editions"
   },
   {
@@ -65,8 +65,8 @@
     "category": "MUSIC",
     "description": "French electronic duo Justice is responsible for the original GTA 6 score. Rockstar has also revealed details about the official album, scheduled for December 11.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice",
-    "thumbnail": "news-thumbnails/music.svg",
-    "fallback": "news-thumbnails/music-fallback.svg",
+    "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak8a12395591/cfc61a2d2e7b8c700e46582dc865e180b6c431d9.jpg",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak81277255o9/71ea1e8f6691270bc9614eb33a34e4365697128a.jpg",
     "theme": "music"
   },
   {
@@ -74,8 +74,8 @@
     "category": "GUIDE",
     "description": "Grand Theft Auto VI is launching on PlayStation 5 and Xbox Series X|S, but what about PC players? Explore the latest information about PC availability and why an official release date is still missing.",
     "sourceUrl": "https://www.pcgamer.com/grand-theft-auto-6/",
-    "thumbnail": "news-thumbnails/pc.svg",
-    "fallback": "news-thumbnails/pc-fallback.svg",
+    "thumbnail": "https://cdn.wccftech.com/wp-content/uploads/2023/12/GTA-VI-PC-Version-Release.png",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4k138k8okkk483/ffebf733f7e03ff9ec9467471cc25a6c1117c5be.jpg",
     "theme": "pc"
   },
   {
@@ -84,8 +84,8 @@
     "category": "GAMEPLAY",
     "description": "Explore Rockstar's extended look at Grand Theft Auto VI, showcasing the game's world, atmosphere, characters, and gameplay footage captured on PlayStation 5.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
-    "thumbnail": "news-thumbnails/gameplay.svg",
-    "fallback": "news-thumbnails/gameplay-fallback.svg",
+    "thumbnail": "https://videos-rockstargames-com.akamaized.net/v4/oats0rtr/art/en-us.jpg?im=Resize=1920",
+    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/89834o94713o21/94f09130d07de4a50e3ab971e2b7d8c253b7c706.jpg",
     "theme": "gameplay"
   }
 ]

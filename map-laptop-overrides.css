@@ -1,11 +1,11 @@
 @media (min-width: 801px) {
   .map-sidebar { min-width: 0; padding: 24px 20px; }
-  .map-sidebar h1 { font-size: clamp(44px, 4.2vw, 66px); margin: 16px 0 18px; }
+  .map-sidebar h1 { font-size: clamp(42px, 3.8vw, 58px); margin: 16px 0 18px; white-space: nowrap; }
 }
 
 @media (min-width: 801px) and (max-height: 850px) {
   .map-header { height: 60px; }
-  .map-app { height: calc(100vh - 60px); grid-template-columns: minmax(280px, 300px) minmax(0, 1fr); }
+  .map-app { height: calc(100vh - 60px); grid-template-columns: minmax(340px, 350px) minmax(0, 1fr); }
   .map-sidebar { padding-top: 20px; padding-bottom: 20px; }
   .sidebar-intro { margin-bottom: 18px; }
   .sidebar-section { margin-top: 20px; padding-top: 17px; }

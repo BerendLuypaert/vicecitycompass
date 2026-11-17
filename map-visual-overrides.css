@@ -1,0 +1,18 @@
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 13px;
+  max-width: min(440px, calc(100% - 44px));
+}
+
+.legend-city, .map-marker.city { background: #ff4f8b; }
+.legend-district, .map-marker.district { background: #ffb866; }
+.legend-hotel, .map-marker.hotel, .map-marker.motel { background: #a978ff; }
+.legend-facility, .map-marker.arena, .map-marker.market, .map-marker.port, .map-marker.industrial { background: #7dd5ff; }
+.legend-island, .map-marker.islands { background: #79e0b0; }
+.legend-park, .map-marker.park { background: #d6ed70; }
+
+@media (max-width: 800px) {
+  .map-legend { left: 14px; max-width: calc(100% - 28px); }
+  .map-legend span:nth-child(3) { display: flex; }
+}

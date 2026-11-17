@@ -18,9 +18,9 @@
 
   function card(vehicle, index) {
     const [a,b] = colors[index % colors.length];
-    const image = vehicle.image ? `<img loading="lazy" src="${escapeHtml(vehicle.image)}" alt="${escapeHtml(vehicle.manufacturer + ' ' + vehicle.model)} vehicle reference image" />` : `<div class="vehicle-placeholder" style="--placeholder-a:${a};--placeholder-b:${b}"><small>Image pending verification</small><strong>${escapeHtml(initials(vehicle))}</strong></div>`;
+    const image = vehicle.image ? `<img loading="lazy" src="${escapeHtml(vehicle.image)}" alt="${escapeHtml(vehicle.manufacturer + ' ' + vehicle.model)} vehicle reference image" />` : `<div class="vehicle-placeholder" style="--placeholder-a:${a};--placeholder-b:${b}"><small>Image Not Yet Available</small><strong>${escapeHtml(initials(vehicle))}</strong></div>`;
     const badgeClass = vehicle.verification === 'Community Identified' ? 'vehicle-badge community' : 'vehicle-badge';
-    const origin = vehicle.imageAvailability === 'placeholder' ? 'GTA V Reference Image — placeholder until an authorized image is available.' : 'GTA 6 reference image supplied for ViceCityCompass.';
+    const origin = vehicle.imageAvailability === 'placeholder' ? 'No verified image is currently available.' : vehicle.imageOrigin === 'GTA 6' ? 'GTA 6 Image' : 'GTA V REFERENCE IMAGE — its GTA 6 appearance may differ.';
     return `<article class="vehicle-card"><div class="vehicle-card-media">${image}</div><div class="vehicle-card-body"><span class="vehicle-manufacturer">${escapeHtml(vehicle.manufacturer)}</span><div class="vehicle-card-top"><h2>${escapeHtml(vehicle.model)}</h2><span class="vehicle-category">${escapeHtml(vehicle.category)}</span></div><span class="${badgeClass}">${escapeHtml(vehicle.verification)}</span><p class="vehicle-card-description">${escapeHtml(vehicle.description)}</p><p class="vehicle-attribution">${escapeHtml(origin)}<br />Source: <a href="${escapeHtml(vehicle.imageSource)}" target="_blank" rel="noreferrer">research reference</a></p></div></article>`;
   }
 

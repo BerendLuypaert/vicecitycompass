@@ -1,0 +1,21 @@
+.card-arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 22px;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.card-arrow::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -7px;
+  width: 19px;
+  height: 3px;
+  background: currentColor;
+  transform: rotate(-45deg);
+}

@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3N4fO2W6s6fQ3jJ4R2v2g5l9xM8xM=" crossorigin="" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-  <link rel="stylesheet" href="map-app.css?v=advanced-2" />
+  <link rel="stylesheet" href="map-app.css?v=advanced-3" />
+  <link rel="stylesheet" href="map-popup.css?v=advanced-1" />
 </head>
 <body class="map-app-body">
   <header class="sub-header map-header">
@@ -24,12 +25,12 @@
       <label class="search-box" for="location-search"><span aria-hidden="true">⌕</span><input id="location-search" type="search" placeholder="Search locations…" autocomplete="off" /><kbd>/</kbd></label>
       <section class="sidebar-section"><div class="section-label"><span>Categories</span><button id="clear-filters" type="button" class="text-button">Clear</button></div><div id="category-filters" class="category-filters"></div></section>
       <section class="progress-card" aria-labelledby="progress-title"><div class="progress-head"><span id="progress-title">Map progress</span><strong id="progress-value">0%</strong></div><div class="progress-track"><span id="progress-bar"></span></div><p><span id="visited-count">0</span> of <span id="location-count">0</span> locations marked visited</p></section>
-      <section class="sidebar-section data-note"><div class="section-label"><span>Dataset</span><span class="live-dot">● Live</span></div><p>Locations load from <code>data/locations.json</code>. Replace that file with your own JSON or GeoJSON after release.</p><label class="import-button" for="dataset-import">Import JSON / GeoJSON<input id="dataset-import" type="file" accept="application/json,.json,.geojson" /></label></section>
+      <section class="sidebar-section data-note"><div class="section-label"><span>Dataset</span><span class="live-dot">● Live</span></div><p>Locations load from <code>data/locations.json</code>. Replace that file with your own JSON or GeoJSON after release.</p><p class="source-links">References: <a href="https://api.gtadb.org/" target="_blank" rel="noreferrer">GTADB API</a> · <a href="https://github.com/wpenistone/leonida_gis" target="_blank" rel="noreferrer">Leonida GIS</a>. External geometry is not bundled without a clear reuse license.</p><label class="import-button" for="dataset-import">Import JSON / GeoJSON<input id="dataset-import" type="file" accept="application/json,.json,.geojson" /></label></section>
     </aside>
     <section class="map-stage" aria-label="Interactive Vice City map"><button id="sidebar-open" class="mobile-panel-button" type="button">☰ Filters</button><div id="map" role="application" aria-label="Zoomable and pannable Vice City map"></div><div id="map-loading" class="map-loading"><span class="loader"></span><span>Loading Vice City…</span></div><div class="map-legend"><span><i class="legend-dot legend-landmark"></i>Landmark</span><span><i class="legend-dot legend-service"></i>Service</span><span><i class="legend-dot legend-activity"></i>Activity</span></div><div class="map-tip">Scroll to zoom · drag to pan · tap a marker for details</div></section>
   </main>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="map-app.js?v=advanced-2"></script>
+  <script src="map-app.js?v=advanced-3"></script>
 </body>
 </html>

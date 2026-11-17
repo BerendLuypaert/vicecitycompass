@@ -1,6 +1,7 @@
 @media (min-width: 801px) {
-  .map-sidebar { min-width: 0; padding: 24px 20px; }
-  .map-sidebar h1 { font-size: clamp(42px, 3.8vw, 58px); margin: 16px 0 18px; white-space: nowrap; }
+  .map-app { grid-template-columns: 380px minmax(0, 1fr) !important; }
+  .map-sidebar { width: 380px; min-width: 0; padding: 24px 20px; }
+  .map-sidebar h1 { width: 100%; font-size: clamp(42px, 3.8vw, 58px) !important; margin: 16px 0 18px; white-space: nowrap; letter-spacing: -.04em; }
 }
 
 @media (min-width: 801px) and (max-height: 850px) {

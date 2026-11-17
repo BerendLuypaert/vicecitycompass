@@ -8,7 +8,7 @@ function renderNews(articles) {
   newsGrid.innerHTML = articles.map((article) => `
     <article class="news-card news-theme-${escapeNews(article.theme)}">
       <div class="news-thumbnail">
-        <img src="${escapeNews(article.thumbnail)}" alt="${escapeNews(article.title)} thumbnail" loading="lazy" />
+        <img src="${escapeNews(article.thumbnail)}" alt="${escapeNews(article.title)} thumbnail" loading="lazy" onerror="this.onerror=null;this.src='${escapeNews(article.fallback)}'" />
       </div>
       <div class="news-card-content">
         <div class="news-meta">

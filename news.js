@@ -18,7 +18,7 @@ function renderNews(articles) {
         <h3>${escapeNews(article.title)}</h3>
         <p>${escapeNews(article.description)}</p>
         ${article.note ? `<p class="news-note">${escapeNews(article.note)}</p>` : ''}
-        <a class="news-link" href="${escapeNews(article.sourceUrl)}" target="_blank" rel="noopener noreferrer">Read Article</a>
+        <a class="news-link" href="${escapeNews(article.sourceUrl)}" target="_blank" rel="noopener noreferrer">Read Article <span class="inline-arrow" aria-hidden="true"></span></a>
       </div>
     </article>`).join('');
 }

@@ -2,22 +2,32 @@
   position: absolute;
   right: 24px;
   bottom: 22px;
-  width: 15px;
-  height: 15px;
-  border-top: 3px solid currentColor;
-  border-right: 3px solid currentColor;
-  transform: rotate(45deg);
+  width: 30px;
+  height: 18px;
+  z-index: 3;
+}
+
+.card-arrow::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 22px;
+  height: 3px;
+  background: currentColor;
+  border-radius: 999px;
 }
 
 .card-arrow::after {
   content: '';
   position: absolute;
-  top: 5px;
-  left: -7px;
-  width: 19px;
-  height: 3px;
-  background: currentColor;
-  transform: rotate(-45deg);
+  top: 2px;
+  right: 1px;
+  width: 11px;
+  height: 11px;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+  transform: rotate(45deg);
 }
 
 /* Shared thumbnail treatment for all homepage cards: fill the card cleanly without distortion. */
@@ -130,6 +140,10 @@
 }
 
 @media (max-width: 760px) {
+  body {
+    background: linear-gradient(145deg, rgba(247, 240, 231, .76), rgba(247, 232, 237, .72)), url('vicecity-background.png') center top / cover fixed no-repeat !important;
+  }
+
   .site-header {
     min-height: 72px;
     height: auto;

@@ -20,6 +20,17 @@
   transform: rotate(-45deg);
 }
 
+/* Shared thumbnail treatment for all homepage cards: fill the card cleanly without distortion. */
+.directory-card .card-thumbnail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
 .card-vehicles {
   background:
     linear-gradient(180deg, rgba(23, 17, 27, 0.06) 12%, rgba(23, 17, 27, 0.84) 100%),
@@ -83,13 +94,7 @@
 }
 
 .card-guides .card-thumbnail {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   object-position: center;
-  z-index: 0;
 }
 
 .card-guides::after {

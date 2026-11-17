@@ -51,9 +51,7 @@
 }
 
 .card-missions {
-  background:
-    linear-gradient(180deg, rgba(23, 17, 27, 0.04) 12%, rgba(23, 17, 27, 0.84) 100%),
-    url('missions-thumbnail.png') center / cover no-repeat;
+  background: #17111b url('missions-thumbnail.png') center / cover no-repeat;
 }
 
 .card-missions .card-thumbnail {
@@ -70,7 +68,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(23, 17, 27, 0.04) 12%, rgba(23, 17, 27, 0.84) 100%);
+  background: linear-gradient(180deg, rgba(23, 17, 27, 0) 35%, rgba(23, 17, 27, 0.82) 100%);
   z-index: 1;
   pointer-events: none;
 }

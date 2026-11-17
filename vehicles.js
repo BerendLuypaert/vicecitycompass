@@ -18,10 +18,10 @@
 
   function card(vehicle, index) {
     const [a,b] = colors[index % colors.length];
-    const imageLabel = vehicle.imageAvailability === 'remote' ? 'GTABase image' : vehicle.imageOrigin === 'GTA 6' ? 'GTA 6 Image' : 'GTA V REFERENCE IMAGE';
+    const imageLabel = vehicle.imageOrigin === 'GTA V Reference' ? 'GTA V REFERENCE IMAGE' : vehicle.imageAvailability === 'remote' ? 'GTA 6 reference image' : 'GTA 6 Image';
     const image = vehicle.image ? `<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${escapeHtml(vehicle.image)}" alt="${escapeHtml(vehicle.manufacturer + ' ' + vehicle.model)} vehicle reference image" /><span class="vehicle-image-label">${imageLabel}</span>` : `<div class="vehicle-placeholder" style="--placeholder-a:${a};--placeholder-b:${b}"><small>Image Not Yet Available</small><strong>${escapeHtml(initials(vehicle))}</strong></div>`;
     const badgeClass = vehicle.verification === 'Community Identified' ? 'vehicle-badge community' : 'vehicle-badge';
-    const origin = vehicle.imageAvailability === 'placeholder' ? 'No verified image is currently available.' : vehicle.imageAvailability === 'remote' ? 'GTABase image — shown as a GTA 6 reference.' : vehicle.imageOrigin === 'GTA 6' ? 'GTA 6 Image' : 'GTA V REFERENCE IMAGE — its GTA 6 appearance may differ.';
+    const origin = vehicle.imageAvailability === 'placeholder' ? 'No verified image is currently available.' : vehicle.imageOrigin === 'GTA V Reference' ? 'GTA V REFERENCE IMAGE — its GTA 6 appearance may differ.' : vehicle.imageAvailability === 'remote' ? 'GTA 6 reference image from the supplied Photo Pack.' : 'GTA 6 Image';
     return `<article class="vehicle-card"><div class="vehicle-card-media">${image}</div><div class="vehicle-card-body"><span class="vehicle-manufacturer">${escapeHtml(vehicle.manufacturer)}</span><div class="vehicle-card-top"><h2>${escapeHtml(vehicle.model)}</h2><span class="vehicle-category">${escapeHtml(vehicle.category)}</span></div><span class="${badgeClass}">${escapeHtml(vehicle.verification)}</span><p class="vehicle-card-description">${escapeHtml(vehicle.description)}</p><p class="vehicle-attribution">${escapeHtml(origin)}<br />Source: <a href="${escapeHtml(vehicle.imageSource)}" target="_blank" rel="noreferrer">research reference</a></p></div></article>`;
   }
 

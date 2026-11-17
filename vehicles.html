@@ -1,1 +1,23 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Vehicles — ViceCityCompass</title><link rel="stylesheet" href="page-template.css"></head><body><header class="sub-header"><a href="index.html">VICECITYCOMPASS</a><a class="back" href="index.html">← Back home</a></header><main class="page-main"><p class="eyebrow">Vice City / 02</p><h1>Vehicles</h1><p class="intro">Cars, bikes, boats and aircraft spotted in official footage and trailers — organized in one clean garage.</p><div class="placeholder-grid"><article class="placeholder"><h2>Cars</h2><p>Verified entries soon.</p></article><article class="placeholder"><h2>Bikes</h2><p>Verified entries soon.</p></article><article class="placeholder"><h2>Aircraft</h2><p>Verified entries soon.</p></article></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicles — ViceCityCompass</title>
+  <link rel="stylesheet" href="page-template.css" />
+  <link rel="stylesheet" href="vehicles.css?v=1" />
+</head>
+<body class="vehicles-page">
+  <header class="sub-header"><a href="index.html">VICECITYCOMPASS</a><a class="back" href="index.html">← Back home</a></header>
+  <main class="vehicle-main">
+    <section class="vehicle-hero"><div><p class="eyebrow">Vice City / 02</p><h1>Vehicles</h1><p class="intro">Explore the GTA 6 vehicle list, from classic American muscle to sleek sports cars spotted in official footage and community research.</p></div><img class="vehicle-hero-image" src="vehicles-thumbnail.png" alt="Vintage car in neon Vice City at night" /></section>
+    <section class="vehicle-tools" aria-label="Vehicle filters">
+      <label class="vehicle-search"><span aria-hidden="true">⌕</span><input id="vehicle-search" type="search" placeholder="Search manufacturer or model…" autocomplete="off" /></label>
+      <div class="filter-row"><label><span>Category</span><select id="category-filter"><option value="all">All Vehicles</option></select></label><label><span>Verification</span><select id="verification-filter"><option value="all">All</option><option value="Officially Named">Officially Named</option><option value="Community Identified">Community Identified</option></select></label></div>
+    </section>
+    <div class="vehicle-results-head"><p id="vehicle-count" aria-live="polite">Showing 34 Vehicles</p><p class="vehicle-note">Names and descriptions are research-based and may change before release.</p></div>
+    <section class="vehicle-grid" id="vehicle-grid" aria-live="polite"></section>
+  </main>
+  <script src="vehicles.js?v=1"></script>
+</body>
+</html>

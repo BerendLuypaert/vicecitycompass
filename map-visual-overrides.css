@@ -5,6 +5,18 @@
   max-width: min(440px, calc(100% - 44px));
 }
 
+.map-notice {
+  color: #cbbdcc;
+  font-size: 12px;
+  line-height: 1.65;
+  margin: -4px 0 24px;
+}
+
+.map-notice a {
+  color: #ff9fbc;
+  font-weight: 700;
+}
+
 .legend-city, .map-marker.city { background: #ff4f8b; }
 .legend-district, .map-marker.district { background: #ffb866; }
 .legend-hotel, .map-marker.hotel, .map-marker.motel { background: #a978ff; }
@@ -13,6 +25,9 @@
 .legend-park, .map-marker.park { background: #d6ed70; }
 
 @media (max-width: 800px) {
+  .map-stage { position: relative; z-index: 1; }
+  .map-sidebar { z-index: 50; }
+  .mobile-panel-button { z-index: 60; }
   .map-legend { left: 14px; max-width: calc(100% - 28px); }
   .map-legend span:nth-child(3) { display: flex; }
 }

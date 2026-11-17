@@ -6,6 +6,7 @@
   <meta name="description" content="ViceCityCompass — a simple GTA 6 fan hub for maps, vehicles, missions, guides and database entries." />
   <title>ViceCityCompass — GTA 6 Hub</title>
   <link rel="stylesheet" href="styles.css?v=54ece18" />
+  <link rel="stylesheet" href="news.css?v=1" />
   <style>
     @media (min-width: 761px) {
       body { background: linear-gradient(135deg, rgba(247,240,231,.64), rgba(247,232,237,.5)), url('vicecity-background-desktop.png') center top / cover fixed no-repeat !important; }
@@ -70,9 +71,18 @@
         <a class="directory-card card-database" href="database.html"><span class="card-number">05</span><span class="card-title">Database</span><span class="card-arrow">↗</span></a>
       </div>
     </section>
+
+    <section class="news-section" aria-labelledby="news-title">
+      <div class="news-heading">
+        <h2 id="news-title">Latest GTA 6 News &amp; Articles</h2>
+        <p class="news-subtitle">Explore the latest Grand Theft Auto VI announcements, official updates, gameplay details, and breaking news from across Leonida.</p>
+      </div>
+      <div class="news-grid" id="news-grid" aria-live="polite"><p class="news-empty">Loading the latest articles…</p></div>
+    </section>
   </main>
 
   <footer class="site-footer"><span>VICECITYCOMPASS</span><span>Built for the wait.</span></footer>
   <script src="script.js"></script>
+  <script src="news.js?v=1"></script>
 </body>
 </html>

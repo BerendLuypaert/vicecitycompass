@@ -1,0 +1,82 @@
+[
+  {
+    "title": "GTA 6 Pre-Load Is Now Available: Everything You Need to Know",
+    "date": "November 10, 2026",
+    "category": "OFFICIAL",
+    "description": "Grand Theft Auto VI pre-loading is officially available ahead of its November 19 launch. Discover how to prepare your console and what Rockstar has revealed about the upcoming release.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "preload"
+  },
+  {
+    "title": "Rockstar Reveals Stunning New GTA 6 Screenshots",
+    "date": "November 5, 2026",
+    "category": "OFFICIAL",
+    "description": "Rockstar Games has released a brand-new gallery showcasing Vice City and the surrounding state of Leonida. Explore the latest environments, characters, and visual details.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "screenshots"
+  },
+  {
+    "title": "GTA 6 Targets 30 FPS: Rockstar Reveals Console Performance Details",
+    "date": "November 10, 2026",
+    "category": "OFFICIAL",
+    "description": "Rockstar has revealed new details about GTA 6's console performance, including its 30 FPS target and additional graphical improvements available on PlayStation 5 Pro.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "performance"
+  },
+  {
+    "title": "GTA 6 Online: Everything We Know About Multiplayer",
+    "date": "November 12, 2026",
+    "category": "MULTIPLAYER",
+    "description": "Will GTA 6 feature an online multiplayer experience? Explore what has been officially confirmed, what remains unknown, and the latest discussion surrounding the future of GTA Online.",
+    "sourceUrl": "https://www.gta6everything.com/questions/does-gta-6-have-online-multiplayer",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "multiplayer",
+    "note": "Online features and release details are not officially confirmed."
+  },
+  {
+    "title": "GTA 6 Launch Trailer Reveals New Details About Vice City",
+    "date": "October 15, 2026",
+    "category": "TRAILER",
+    "description": "Rockstar's Grand Theft Auto VI launch trailer offers another look at Jason, Lucia, and the world of Leonida. Explore the characters, atmosphere, and new footage revealed.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/517572321a549a/watch-the-grand-theft-auto-vi-launch-trailer",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "trailer"
+  },
+  {
+    "title": "GTA 6 Editions Explained: Standard, Ultimate and Pre-Order Bonuses",
+    "category": "GUIDE",
+    "description": "Discover the differences between Grand Theft Auto VI editions, available platforms, Ultimate Edition benefits, and the exclusive Vintage Vice City pre-order bonuses.",
+    "sourceUrl": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
+    "thumbnail": "gta6-logo.svg",
+    "theme": "editions"
+  },
+  {
+    "title": "Justice Officially Revealed as GTA 6 Original Score Composer",
+    "date": "October 29, 2026",
+    "category": "MUSIC",
+    "description": "French electronic duo Justice is responsible for the original GTA 6 score. Rockstar has also revealed details about the official album, scheduled for December 11.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "music"
+  },
+  {
+    "title": "GTA 6 PC Release: Everything We Know So Far",
+    "category": "GUIDE",
+    "description": "Grand Theft Auto VI is launching on PlayStation 5 and Xbox Series X|S, but what about PC players? Explore the latest information about PC availability and why an official release date is still missing.",
+    "sourceUrl": "https://www.pcgamer.com/grand-theft-auto-6/",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "pc"
+  },
+  {
+    "title": "GTA 6 Extended Gameplay Showcase: A Closer Look at Leonida",
+    "date": "August 27, 2026",
+    "category": "GAMEPLAY",
+    "description": "Explore Rockstar's extended look at Grand Theft Auto VI, showcasing the game's world, atmosphere, characters, and gameplay footage captured on PlayStation 5.",
+    "sourceUrl": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+    "thumbnail": "vicecity-background-desktop.png",
+    "theme": "gameplay"
+  }
+]

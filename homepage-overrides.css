@@ -19,3 +19,9 @@
   background: currentColor;
   transform: rotate(-45deg);
 }
+
+.card-vehicles {
+  background:
+    linear-gradient(180deg, rgba(23, 17, 27, 0.06) 12%, rgba(23, 17, 27, 0.84) 100%),
+    url('vehicles-thumbnail.png') center / cover no-repeat;
+}

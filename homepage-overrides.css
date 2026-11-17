@@ -110,3 +110,21 @@
   position: relative;
   z-index: 2;
 }
+
+.card-database {
+  background: #17111b url('database-thumbnail.png') center / cover no-repeat;
+}
+
+.card-database::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(23, 17, 27, 0.04) 28%, rgba(23, 17, 27, 0.86) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-database > span {
+  position: relative;
+  z-index: 2;
+}

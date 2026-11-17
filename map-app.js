@@ -5,9 +5,14 @@ const DATA_SOURCES = ['data/locations.json', 'data/locations.geojson'];
 const STORAGE_KEY = 'vicecitycompass-map-progress-v1';
 const CATEGORY_LABELS = { city: 'Cities', district: 'Districts', hotel: 'Hotels', arena: 'Arenas', market: 'Markets', port: 'Ports', beach: 'Beaches', islands: 'Islands', park: 'Parks', motel: 'Motels', industrial: 'Industrial', landmarks: 'Landmarks', services: 'Services', activities: 'Activities', story: 'Story', secrets: 'Secrets' };
 const map = L.map('map', { crs: L.CRS.Simple, minZoom: -2, maxZoom: 4, zoomSnap: 0.25, zoomDelta: 0.5, preferCanvas: true, zoomControl: false, attributionControl: false, tap: true });
-L.imageOverlay('interactive-map-thumbnail.webp', IMAGE_BOUNDS, { opacity: 0.98, interactive: false }).addTo(map);
-const clusterLayer = L.markerClusterGroup({ chunkedLoading: true, chunkInterval: 80, chunkDelay: 20, removeOutsideVisibleBounds: true, maxClusterRadius: 46, spiderfyOnMaxZoom: true, showCoverageOnHover: false }).addTo(map);
-map.fitBounds(IMAGE_BOUNDS);
+const imageLayer = L.imageOverlay('interactive-map-thumbnail.webp', IMAGE_BOUNDS, { opacity: 0.98, interactive: false });
+const clusterLayer = L.markerClusterGroup({ chunkedLoading: true, chunkInterval: 80, chunkDelay: 20, removeOutsideVisibleBounds: false, maxClusterRadius: 46, spiderfyOnMaxZoom: true, showCoverageOnHover: false }).addTo(map);
+imageLayer.addTo(map);
+map.invalidateSize();
+map.fitBounds(IMAGE_BOUNDS, { padding: [18, 18], animate: false });
+function resetMapViewport() { map.invalidateSize(); imageLayer.addTo(map); map.fitBounds(IMAGE_BOUNDS, { padding: [18, 18] }); }
+map.whenReady(() => { requestAnimationFrame(resetMapViewport); setTimeout(resetMapViewport, 180); });
+window.addEventListener('resize', () => map.invalidateSize());
 const state = { features: [], markerById: new Map(), selectedCategories: new Set(), query: '', visited: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')) };
 const $ = (selector) => document.querySelector(selector);
 function imagePoint(feature) { const [x, y] = feature.geometry.coordinates; return [IMAGE_HEIGHT - y, x]; }

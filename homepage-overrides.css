@@ -128,3 +128,21 @@
   position: relative;
   z-index: 2;
 }
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 72px;
+    height: auto;
+    gap: 10px;
+  }
+
+  .header-note {
+    display: block;
+    max-width: 132px;
+    color: #bdb2c0;
+    font-size: 8px;
+    line-height: 1.2;
+    letter-spacing: .05em;
+    text-align: right;
+  }
+}

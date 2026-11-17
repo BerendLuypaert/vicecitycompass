@@ -8,7 +8,7 @@
 .site-header .brand-logo{width:42px!important;height:48px!important;max-width:42px;max-height:48px}
 .hero img{display:none!important}
 @media(min-width:761px){body{background-image:linear-gradient(135deg,rgba(247,240,231,.64),rgba(247,232,237,.5)),url('vicecity-background-desktop.png')}}
-.card-map{background:linear-gradient(180deg,rgba(23,17,27,.05) 15%,rgba(23,17,27,.86) 100%),url('interactive-map-thumbnail.png') center 38%/cover no-repeat}
+.card-map{background:linear-gradient(180deg,rgba(23,17,27,.05) 15%,rgba(23,17,27,.86) 100%),url('interactive-map-thumbnail.webp') center 38%/cover no-repeat}
 body{position:relative;isolation:isolate;background:linear-gradient(135deg,rgba(247,240,231,.58),rgba(247,232,237,.42)),url('vicecity-background.png') center top/cover fixed no-repeat}
 body:before{display:none}
 body>*{position:relative;z-index:1}

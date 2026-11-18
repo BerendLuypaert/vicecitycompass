@@ -49,15 +49,29 @@ function renderGuide(guide, allGuides) {
       </div>
     </article>`;
 
+  const canonicalUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
   const structuredData = {
     '@context': 'https://schema.org', '@type': 'Article', headline: guide.title,
     description: guide.description, dateModified: guide.updated,
-    mainEntityOfPage: window.location.href, publisher: { '@type': 'Organization', name: 'ViceCityCompass' }
+    mainEntityOfPage: canonicalUrl, image: 'https://vicecitycompass.com/guides-thumbnail.png',
+    author: { '@type': 'Organization', name: 'ViceCityCompass', url: 'https://vicecitycompass.com/' },
+    publisher: { '@type': 'Organization', name: 'ViceCityCompass', url: 'https://vicecitycompass.com/' }
   };
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.textContent = JSON.stringify(structuredData);
   document.head.appendChild(script);
+
+  const breadcrumbScript = document.createElement('script');
+  breadcrumbScript.type = 'application/ld+json';
+  breadcrumbScript.textContent = JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vicecitycompass.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://vicecitycompass.com/guides.html' },
+      { '@type': 'ListItem', position: 3, name: guide.title, item: canonicalUrl }
+    ]
+  });
+  document.head.appendChild(breadcrumbScript);
 }
 
 fetch('../guides-data.json?v=1')

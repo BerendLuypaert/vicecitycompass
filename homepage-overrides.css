@@ -7,6 +7,14 @@
   z-index: 3;
 }
 
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.footer-links a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footer-links a:hover { color: var(--pink); }
+@media (max-width: 760px) {
+  .site-footer { flex-wrap: wrap; gap: 12px; }
+  .footer-links { width: 100%; gap: 10px; }
+}
+
 .card-arrow::before {
   content: '';
   position: absolute;

@@ -74,7 +74,7 @@ function renderGuide(guide, allGuides) {
   document.head.appendChild(breadcrumbScript);
 }
 
-fetch('../guides-data.json?v=1')
+fetch('../guides-data.json?v=2')
   .then(response => { if (!response.ok) throw new Error('Could not load guide data'); return response.json(); })
   .then(guides => {
     const guide = guides.find(item => item.slug === main.dataset.guide);

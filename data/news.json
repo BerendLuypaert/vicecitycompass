@@ -55,8 +55,8 @@
     "category": "GUIDE",
     "description": "Discover the differences between Grand Theft Auto VI editions, available platforms, Ultimate Edition benefits, and the exclusive Vintage Vice City pre-order bonuses.",
     "sourceUrl": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
-    "thumbnail": "https://www.gtavispot.com/images/Cluster_1/GTA_vi_Price.webp",
-    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/k4ak9okk485712/10d7450a2224db29736af8c50dd8207812e95e42.jpg",
+    "thumbnail": "news-thumbnails/editions.svg",
+    "fallback": "news-thumbnails/editions-fallback.svg",
     "theme": "editions"
   },
   {
@@ -66,7 +66,7 @@
     "description": "French electronic duo Justice is responsible for the original GTA 6 score. Rockstar has also revealed details about the official album, scheduled for December 11.",
     "sourceUrl": "https://www.rockstargames.com/newswire/article/39ak8a12395591/grand-theft-auto-vi-original-score-by-justice",
     "thumbnail": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak8a12395591/cfc61a2d2e7b8c700e46582dc865e180b6c431d9.jpg",
-    "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39ak81277255o9/71ea1e8f6691270bc9614eb33a34e4365697128a.jpg",
+    "fallback": "news-thumbnails/music-fallback.svg",
     "theme": "music"
   },
   {
@@ -87,5 +87,38 @@
     "thumbnail": "https://videos-rockstargames-com.akamaized.net/v4/oats0rtr/art/en-us.jpg?im=Resize=1920",
     "fallback": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/89834o94713o21/94f09130d07de4a50e3ab971e2b7d8c253b7c706.jpg",
     "theme": "gameplay"
+  },
+  {
+    "title": "GTA 6 Launch Platforms and Editions: What Rockstar Confirms",
+    "date": "November 18, 2026",
+    "category": "VICECITYCOMPASS",
+    "description": "A source-first summary of the official GTA 6 platforms, Standard and Ultimate editions, physical and digital versions, and the limits of current pre-order information.",
+    "sourceUrl": "news/gta6-platforms-and-editions.html",
+    "thumbnail": "news-thumbnails/editions.svg",
+    "fallback": "news-thumbnails/editions-fallback.svg",
+    "theme": "editions",
+    "note": "Original ViceCityCompass article based on Rockstar Support."
+  },
+  {
+    "title": "GTA 6’s Leonida: The Official World, Characters and Regions",
+    "date": "November 18, 2026",
+    "category": "VICECITYCOMPASS",
+    "description": "What Rockstar’s official Leonida material confirms about Jason, Lucia, Vice City, the Keys, Grassrivers and the wider world before launch.",
+    "sourceUrl": "news/gta6-leonida-world.html",
+    "thumbnail": "news-thumbnails/screenshots.svg",
+    "fallback": "news-thumbnails/screenshots-fallback.svg",
+    "theme": "screenshots",
+    "note": "Original ViceCityCompass article based on Rockstar Games."
+  },
+  {
+    "title": "GTA 6 Music and Radio: Justice, Flash FM and Confirmed Details",
+    "date": "November 18, 2026",
+    "category": "VICECITYCOMPASS",
+    "description": "A clear guide to the official Justice score announcement, GTA 6 radio stations and the difference between confirmed music and trailer speculation.",
+    "sourceUrl": "news/gta6-music-and-radio.html",
+    "thumbnail": "news-thumbnails/music.svg",
+    "fallback": "news-thumbnails/music-fallback.svg",
+    "theme": "music",
+    "note": "Original ViceCityCompass article based on Rockstar’s official music page."
   }
 ]

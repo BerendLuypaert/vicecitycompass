@@ -18,12 +18,12 @@ function renderNews(articles) {
         <h3>${escapeNews(article.title)}</h3>
         <p>${escapeNews(article.description)}</p>
         ${article.note ? `<p class="news-note">${escapeNews(article.note)}</p>` : ''}
-        <a class="news-link" href="${escapeNews(article.sourceUrl)}" target="_blank" rel="noopener noreferrer">Read Article <span class="inline-arrow" aria-hidden="true"></span></a>
+        <a class="news-link" href="${escapeNews(article.sourceUrl)}"${/^https?:\/\//.test(article.sourceUrl) ? ' target="_blank" rel="noopener noreferrer"' : ''}>Read Article <span class="inline-arrow" aria-hidden="true"></span></a>
       </div>
     </article>`).join('');
 }
 
-fetch('data/news.json?v=3', { cache: 'no-store' })
+fetch('data/news.json?v=4', { cache: 'no-store' })
   .then((response) => { if (!response.ok) throw new Error('News data unavailable'); return response.json(); })
   .then(renderNews)
   .catch(() => { newsGrid.innerHTML = '<p class="news-empty">News articles are temporarily unavailable.</p>'; });

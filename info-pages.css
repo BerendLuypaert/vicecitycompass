@@ -1,0 +1,15 @@
+.info-main { max-width: 960px; margin: 0 auto; padding: 76px 24px 100px; }
+.info-main > header { max-width: 720px; margin-bottom: 42px; }
+.info-main h1 { font-family: 'Barlow Condensed', Impact, sans-serif; font-size: clamp(54px, 9vw, 108px); line-height: .84; text-transform: uppercase; margin: 18px 0; }
+.info-main h2 { font-family: 'Barlow Condensed', Impact, sans-serif; font-size: 34px; line-height: .95; text-transform: uppercase; margin: 38px 0 12px; }
+.info-main p, .info-main li { color: #766b76; font-size: 15px; line-height: 1.75; }
+.info-main ul { padding-left: 22px; }
+.info-main a { color: #b52d62; font-weight: 700; }
+.info-note { padding: 18px 20px; border-left: 3px solid #ff4f8b; background: #fff6f8; color: #5b4d5a !important; }
+.info-meta { color: #8a7c89; font-size: 11px !important; text-transform: uppercase; letter-spacing: .1em; }
+.info-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.info-actions a { display: inline-flex; padding: 11px 14px; border: 1px solid #ff4f8b; border-radius: 9px; text-decoration: none; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; }
+.info-footer { border-top: 1px solid #d9cfcf; padding: 24px clamp(24px, 7vw, 100px); display: flex; flex-wrap: wrap; gap: 14px 24px; color: #766b76; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.info-footer nav { display: flex; flex-wrap: wrap; gap: 12px; }
+.info-footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 650px) { .info-main { padding: 58px 18px 78px; } .info-main h2 { font-size: 30px; } .info-main p, .info-main li { font-size: 14px; } }

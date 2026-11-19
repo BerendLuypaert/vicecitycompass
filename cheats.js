@@ -36,7 +36,7 @@
       const matchesText = !query || [cheat.name, cheat.effect, cheat.category, cheat.unlock].join(' ').toLowerCase().includes(query);
       return matchesText && (selectedCategory === 'all' || cheat.category === selectedCategory);
     });
-    if (summary) summary.textContent = 'Showing ' + results.length + ' of ' + cheats.length + ' reported GTA 6 cheats.';
+    if (summary) summary.textContent = 'Showing ' + results.length + ' of ' + cheats.length + ' GTA 6 cheat entries.';
     if (grid) grid.innerHTML = results.length ? results.map(cardMarkup).join('') : '<p class="database-empty">No cheats match your search.</p>';
     document.querySelectorAll('.copy-code[data-code]').forEach(function (button) {
       button.addEventListener('click', function () {

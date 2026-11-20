@@ -15,7 +15,11 @@
     document.getElementById('mission-count').textContent = `Showing ${filtered.length} of ${missions.length} main story missions.`;
     let imageIndex = 0;
     root.innerHTML = ['Chapter 1','Chapter 2','Chapter 3','Chapter 4','Chapter 5'].map(chapter => { const items = filtered.filter(m => m.chapter === chapter); if (!items.length) return ''; return `<section class="mission-group"><div class="mission-group-heading"><p class="eyebrow">${chapter.slice(-1).padStart(2,'0')}</p><div><h2>${chapterNames[chapter]}</h2><p>${items.length} of ${missions.filter(m=>m.chapter===chapter).length} main story missions · ${esc(items[0].location)}</p></div></div><div class="mission-grid">${items.map(m => card(m, imageIndex++)).join('')}</div></section>`; }).join('') || '<p class="mission-empty">No main story missions match your search.</p>';
-    root.querySelectorAll('img').forEach(image => image.addEventListener('error', () => { image.src = 'missions-thumbnail.png'; image.parentElement.querySelector('.mission-image-label').textContent = 'Fallback image — source unavailable'; }, {once:true}));
+    root.querySelectorAll('img').forEach((image, failedIndex) => image.addEventListener('error', () => {
+      const fallback = ['missions-thumbnail.png','guides-thumbnail.png','vehicles-thumbnail.png','database-thumbnail.png','cheatcodes-thumbnail-v2.png','interactive-map-thumbnail.webp','vicecity-background-desktop.png','vicecity-background.png'][failedIndex % 8];
+      image.src = fallback;
+      image.parentElement.querySelector('.mission-image-label').textContent = 'Local fallback image — source unavailable';
+    }, {once:true}));
   }
   search.addEventListener('input', render); filter.addEventListener('change', render); render();
 }());
